@@ -11,7 +11,7 @@ import java.io.IOException;
 public class AuthFilter implements Filter {
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException {
         HttpServletRequest httpSession = (HttpServletRequest) request;
         HttpSession session = httpSession.getSession();
 
